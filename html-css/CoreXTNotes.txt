@@ -234,3 +234,19 @@ fixed: fixed position relative to viewport / screen. doesnt scroll.
 
 --------
 z-index: stacking order for box to be displayed on top
+--------
+overflow: 
+	auto : overflowed conent is hidden and scroll is enabled.
+	scroll: both x and y scroll by default
+	hidden: overflowed content is hidden
+	visible: default behaviour. over flowed contnet is shown outside box.
+--------
+
+background:
+	-color: set color as bg
+	-image: set image or gredient as bg
+	-position: set x y position where bg should appear.
+	-repeat: to repeat bg
+eg: background: url("test.jpg") repeat-y;
+background: border-box red;
+background: no-repeat center/80% url("...")
