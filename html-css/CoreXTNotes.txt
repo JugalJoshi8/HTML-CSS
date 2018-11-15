@@ -1,0 +1,236 @@
+PL:
+
+GPL - general
+
+DSL - domain specific
+
+web - store process present distributed info system. distributed / linked document system
+
+documents: 
+	structured : Standard Generalized Markup Language (SGML) spec/meta language for defining documentlanguages
+	GMLS> Mathml, ebml, yaml,wml, html, xml
+	markup: notation/ symbol. used to present info in various formats. eg: bold text
+
+tim berners lee:
+1 html,
+2 distributor - web server
+3.transporter: data transfer/transmission rule:protocol
+
+c:, ftp:,http: schemes to represent pattern how data is transferred bw memory cells.
+schemes are system programs. 
+4. consumer : web agent: web browser
+	line mode browser first browser
+	protocol has 2 parts distribution/server, consumer/client
+DNS: protocol for mapping phyical machine to logical addr.
+url- 
+
+uri-nuiform res id -data formats
+
+--------
+html5 spec:
+programming - 
+      --storage api for client side storage. local storage/ session storage / indexed DB/ web sql(non standarized. chrome only)
+      --location api geolocation
+      -- web worker - multithreading
+      -- web socket live connection , protocol- data streaming
+      -- server sent events -sse
+      -- cache, manifest - enable offline application
+      -- SPA apis- history, location, new apis and events, hash based urls
+      --drag and drop
+	experimental apis: web rtc
+	html5 custom elements - web component specification	
+
+design - content + presentation
+	semantics: the meaningful element
+		semantic layout elements header, footer,aside, nav , article, section, main, address
+		semantic form elements input type password. email. number, date, time, datetime, range, url, color, search
+		semantic form elements attrs: required, minlength, maxlength, pattern, range
+		other elements: canvas 2d shapes, svg
+		3d graphics- webgl
+		multimedia: audio, video
+	other: mathml, mark, fig, figcaption, progress, meter
+---
+html5.x
+<!DOCTYPE html>
+<html>
+	<head></head>
+..
+</html>
+
+-----
+head: title, style, link, script, meta
+
+title : logo - Pagename
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> viewport - browser screen
+
+<meta property = 'og:image' for facebook image. similarly og:description and og:title. og: open graph protocol
+<meta name = 'twitter:title' content = 'asds'
+<script src ='location' type = "script/javascript""
+
+script tag can be initialized in head or body
+
+html5 for old browsers:
+polyfills: feature detection library. it is wrapper lib for achieving new features of old browsers
+
+<html lang = "en-US" for search engine and visually impaired
+----------------------
+authoring / structuring content:
+
+the basics: headings and paragraphs:
+
+standards/recommendations:
+1. use simgle h1. this is top level heading and all other sit below it.
+2.use heading in correct order.
+3. dont use more than 3 headings.
+---
+content representation using lists:
+	represent content in proper order generally vertical order.
+	ordered list:
+	<ol>
+        <li>Coffee</li>
+    	</ol>
+	unordered list:
+	<ul>
+        <li>Coffee</li>
+        
+    </ul>
+	description list
+	<dl>
+        <dt>coffee</dt>
+        <dd>hot blcak drink</dd>
+        <dt>tea</dt>
+        <dd>hot brown dring</dd>
+        <dt>milk</dt>
+        <dd>hot white drink</dd>
+   	 </dl>
+ul types: square, disc, circle, none
+ol types : A,1, I, start = 10
+
+-------------------
+
+kickstarting styling: beautifying content:
+core features:
+	css is based on decision programming paradigm/ rule based programming
+	css is PL, and requires compiler and reuntime embedded in browser. css parser and engine
+	css rules are called 'selectors'. Based on rule, content will be presented.
+selector rule syntax:
+selector() ===> if(selector) { inject style ingo to markup}
+selector{
+	style instructions(in key: value pattern)
+}
+
+css core modules:
+color, box model,
+
+---------------
+
+validating html docs: validator.w3.org
+
+---------
+
+html elements flow:
+	by default let to right rendering
+	all elements are wrapped and represented in a box. 
+	box will have width, height properties. with top, right ,bottom, left sides clockwise order. 
+	box is measured in px, percentage unit.
+	width calculated based on elements parent width, height based on elemets content height
+	auto calculates width based on element content width
+html elements categories:
+	take whole parent width are "block" elements. eg h1.., div, p, header, footer, aside, section, nav, article
+	take its content width are "inline" elements. span, a, 
+space management:
+	space around content: padding
+	space outside content: margin
+	reresented in px, %
+--------
+
+css guidelines:
+1. setting charset: @charset "UTF-8";
+2. comment description about website eg: /* style sheet for explor california
+						may be reused forpersonal edu....*/
+3.color code guidelines.
+	eg: /* ---color guide----
+		#3c6b92: main blue
+		....	*/
+4. Style TOC (table of contents)
+	1. Global constants (setting font @font-face {})
+	2. css reset eg: * {padding: 0}
+	3. global classes
+	4. home page layout
+	5. top level layout
+	6. region detail styles
+		header
+		navigation
+		main content
+			data tables
+			spotlight region
+			forms
+		sidebar
+		footer 	
+-------
+
+css and inheritance:
+
+generalization
+	top reusable styles for whole web site
+specialization
+	override styles from global
+
+guidelines:
+	every web page is placed inside one single custom container.
+	we need to set custom container width based on content, screen.
+	general view port for modern desktop is 900+ px. eg: 980px;
+
+------------
+
+
+layout design in html and css:
+	1. no layout - very old model
+	2. table- very old model
+	3. div
+techniques:
+1. normal flow
+2. float
+3. positioning
+4. flexbox
+5. grid
+--------
+
+moving boxes:
+1.left to right and right to left
+2. any direction
+
+----
+
+clear left: it any space in left side, that will be cleared
+
+-------
+float fixes:
+      /* clear fix for float */
+        /*.wrapper::after {
+            content: '';
+            clear: both;
+            display: block;
+        }*/
+
+        /* overflow fix for float */
+        .wrapper {
+            overflow: auto;
+        }
+        /* modern fix for float */
+        .wrapper {
+            display: flow-root;
+        }
+
+------------
+
+positions:
+
+relative: relative to its original position
+absolute:by default relative to viewport or an ancestor with postion relative
+fixed: fixed position relative to viewport / screen. doesnt scroll. 
+
+--------
+z-index: stacking order for box to be displayed on top
