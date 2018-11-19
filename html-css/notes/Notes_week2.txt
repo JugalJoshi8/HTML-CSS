@@ -1,0 +1,107 @@
+Responsive web design:
+
+responsive web design term was coined and developed by Ethan Marcotte.
+
+Responsive: web has to respond based on the screen width, content should be displayed according to device.
+Responsive design:
+1.differnt devices
+2. different OS
+3.Different interface modes - keyboard, mouse, touch
+4. different color density and pixels
+
+"responnsive web design is the practice of building a website suitable to work on every device and screen size,
+ no matter how large or small, mobile or desktop.
+---------------------
+responsive vs adaptive vs mobile web:
+
+responsice and  adaptive web design are closely related.
+
+responsive generally means to react quickly and positively to any change, while adaptive means to be easily modified for a new purpose or situation, such as change. 
+
+responsive: -creting single layout to adjust for diffent screens
+adaptive: progressive enhancement. checking if browser supports a feature and adding layout based on that.
+
+Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
+
+Responsive design works on the principle of flexibility - a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors.
+
+Adaptive design is more like the modern definition of progressive enhancement. Instead of one flexible design, adaptive design detects the device and other features, and then provides the appropriate feature and layout based on a predefined set of viewport sizes and other characteristics.
+
+responsive + adaptive == web style good choice.
+
+Mobile on the other hand, generally means to build a seperate website commonly on a new domain solely for mobile users.
+---------------------
+
+thinks u must know for web design:
+1. Layouts
+2. Content: text, images, videos
+3. colors
+4. fonts
+
+fluid design:
+
+convert PX to proportional. px to %.
+
+--------
+
+RWD ingredients:
+1. flexible type setting / typography
+2. flexible grid based layout
+3. flexible images and media
+4. media queries, a module from the css3 specification
+
+--------------
+
+typography: 
+
+font family
+font-size: 10-unit
+font-style: normal | bold | italic
+
+default font - size is 16 px. Its decided based on screen zoom level.
+
+default values = 16px = 1em = 100%
+
+change default size to 20px = 1.25em = 125%
+
+----------------
+
+h1 default size 32px or 2em;
+
+responsive layout : 
+1.convert size in %
+2. flexbox
+3. css 3 new grid, multi-col
+
+------
+
+margin in % - of parent width
+padding in % of current element width
+
+-----------------------
+
+responsive media : images / videos
+	set max-width: 100% for img, embed, object, video
+
+@media (max-width: 450px) and (max-width: 960px) {
+
+}
+
+----------
+
+web -accessibility - ARIA
+
+"the web for every one"
+web is accessed by disabled people by using tools such as screen readers
+
+Accessibility tree: 
+
+programatic representation of any GUI, assistive technologies such as screen readers, which reads the tree and helps the user.
+
+eg: 
+role = navigation
+role = checkbox
+aria-checked = true
+
+chromevox plugin for chrome used to read
+

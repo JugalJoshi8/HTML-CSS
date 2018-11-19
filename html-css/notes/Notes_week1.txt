@@ -250,3 +250,28 @@ background:
 eg: background: url("test.jpg") repeat-y;
 background: border-box red;
 background: no-repeat center/80% url("...")
+
+
+---------
+flex container: display: flex, contains child elements.
+flex-item: children of flex container
+
+---table
+<table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+
+semantic table elements:
+	thead
+	tbody
+	tfoot
+</tr>
+
+
+-----------------------------------------------
+

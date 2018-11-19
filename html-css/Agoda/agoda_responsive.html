@@ -11,14 +11,22 @@
         body {
             margin: 0;
             padding: 0;
+            font-size: 62.5%;
+        }
+
+        @media (max-width: 959px) {
+            html,
+            body {
+                font-size: 50%;
+            }
         }
 
         h1 {
-            font-size: 26px;
+            font-size: 2.6rem;
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 2.2rem;
         }
 
 
@@ -32,10 +40,11 @@
         }
 
         .wrapper {
-            width: 980px;
+            width: 68.86858749121573%;
             background-color: #fff;
             margin: 0 auto;
             padding: 2px;
+            font-size: 1.5rem;
         }
 
         header {
@@ -47,7 +56,7 @@
             float: left;
             line-height: 50px;
             color: #fff;
-            font-size: 20px;
+            font-size: 2rem;
             font-weight: bold;
             margin: 0 10px;
         }
@@ -61,22 +70,22 @@
         .createAccount {
             float: right;
             height: 28px;
-            margin: 10px;
+            margin: 10px 2%;
             border: solid 1px #fff;
             color: #fff;
-            padding: 0 10px;
+            padding: 0 2%;
             line-height: 28px;
         }
 
         .homesContainer {
             background-color: rgb(199, 240, 172);
-            height: 700px;
             background-image: linear-gradient( lightblue, rgb(212, 228, 231));
+            display: flow-root;
         }
 
         .homes,
         .offers {
-            width: 490px;
+            width: 50%;
             float: left;
             color: white;
             box-sizing: border-box;
@@ -98,14 +107,14 @@
 
         .offers1>div {
             float: left;
-            width: 230px;
+            width: 49%;
             height: 100%;
             box-sizing: border-box;
             padding: 10px;
         }
 
         .offers1>div:first-child {
-            margin-right: 10px;
+            margin-right: 2%;
         }
 
         .offers1 {
@@ -117,7 +126,7 @@
         }
 
         .host {
-            background-color:white;
+            background-color: white;
             color: #0a4867;
         }
 
@@ -134,14 +143,14 @@
             background-color: steelblue;
             color: whitesmoke;
             height: 200px;
-            width: 220px;
+            width: 49%;
             padding: 10px;
             box-sizing: border-box;
 
         }
 
         .offerList>div:first-child {
-            margin-right: 10px;
+            margin-right: 2%;
         }
 
         .offers2 {
@@ -165,12 +174,12 @@
 
         .comment {
             float: left;
-            width: 303px;
+            width: 32%;
             border-bottom: solid 4px skyblue;
         }
 
-        .comment:not(last-child) {
-            margin-right: 10px;
+        .comment:not(:last-child) {
+            margin-right: 2%;
         }
 
         .commentsTitle {
@@ -187,15 +196,15 @@
 
         .destination {
             float: left;
-            width: 225px;
+            width: 23.5%;
         }
 
         .destinations h2 {
             text-align: center;
         }
 
-        .destination:not(last-child) {
-            margin-right: 10px;
+        .destination:not(:last-child) {
+            margin-right: 2%;
         }
 
         .destination img {
@@ -204,7 +213,7 @@
 
         footer {
             display: flow-root;
-            padding: 0 100px;
+            padding: 0 4%;
             box-sizing: border-box;
             background-color: lightgray;
         }
@@ -227,7 +236,7 @@
         .tab {
             padding: 0 10px;
             line-height: 40px;
-            background:rgb(23, 188, 243);
+            background: rgb(23, 188, 243);
             color: #fff;
         }
 
@@ -242,21 +251,43 @@
         .searchInput {
             margin: 20px 0;
             height: 40px;
-            width: 300px;
+            width: 80%;
             outline: none;
             border: solid 1px white;
         }
 
         .searchButton {
             display: block;
-            width: 150px;
+            width: 40%;
             height: 40px;
-            background:rgb(23, 188, 243);
+            background: rgb(23, 188, 243);
             outline: none;
             border: solid 1px white;
             box-shadow: 2px 2px 5px white;
             font-size: 18px;
             color: white;
+        }
+
+        @media(max-width: 959px) {
+            .homes,
+            .offers {
+                width: 100%;
+                float: none;
+            }
+
+            footer ul {
+                width: 50%;
+            }
+
+            .homesContainer {
+                display: block;
+            }
+        }
+
+        @media(max-width: 639px) {
+            .wrapper {
+                width: 100%;
+            }
         }
     </style>
 </head>
