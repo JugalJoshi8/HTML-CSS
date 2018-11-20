@@ -105,3 +105,21 @@ aria-checked = true
 
 chromevox plugin for chrome used to read
 
+------------------------
+
+grid layout:
+
+display grid or inline-grid for container. its children are grid items.
+grid-template-row eg: 200px 1fr 2fr;, grid-template-columns
+fr fraction unit
+row-gap, column-gap
+
+repeat function: repeat(2, 1fr)
+-----------
+nested grid
+implicit grid
+sub grid
+grid column start, grid column end or grid-column: x / y. eg: 1 / 2
+
+
+
